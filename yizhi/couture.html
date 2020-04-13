@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thesis Couture</title>
+    <meta charset="UTF-8">
+    <script src="jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <script language="javascript" type="text/javascript" src="p5.js"></script> -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+    <script src="couturep5.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="topmenu">
+        <a id="topmenulogo" href="about.html" style="border:none; color:black; text-decoration-line:none;">晓悉</a>
+        <!-- <a id="topmenusignup">Sign Up</a> -->
+        <!-- <a id="topmenulogin">Log In</a> -->
+        <a id="topmenufoundation" href="foundation.html" style="border:none; color:black; text-decoration-line:none;">Foundation</a>
+        <a id="topmenubrowse" href="index.html" style="border:none; color:black; text-decoration-line:none;">Browse</a>
+        <a id="topmenutheme" href="theme.html" style="border:none; color:black; text-decoration-line:none;">Theme</a>
+        <a id="topmenucouture">Couture</a>
+    </div>
+
+    <input type="text" id="coutureMyInput" onkeyup="myFunction()" placeholder="Any words or short phrase..." title="Type in a name">
+
+    <div id="inputAlert">Max 5 characters</div>
+
+    <div id="colors">
+        <label class="colorText" for="favcolor1">Character:</label>
+        <input class="colorSelector" type="color" id="favcolor1" name="favcolor1" value="#FF5C00">
+        <label class="colorText" for="favcolor2">Background:</label>
+        <input class="colorSelector" type="color" id="favcolor2" name="favcolor2" value="#FFFFFF">
+    </div>
+
+    <div id="ca"></div>
+    <div class="savePngText" onclick="savePng()">Save As PNG</div>
+
+    <!-- <button onclick="myFunction()">Try it</button> -->
+
+</body>
+</html>
