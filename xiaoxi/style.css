@@ -108,6 +108,8 @@
     top: 0;
     left: 0;
     /*width: 20vw;*/
+    width: 24.6vw;
+    /*width: 20vw;*/
     /*overflow: hidden;*/
 }
 
@@ -144,8 +146,8 @@
     font-size: 4.5vw;
     column-count: 6;
     column-gap: 0;
-    margin-left: 26vw;
-    width:72vw;
+    margin-left: 28vw;
+    width:70vw;
 }
 
 #idchar2{
@@ -153,8 +155,8 @@
     font-size: 4.5vw;
     column-count: 6;
     column-gap: 0;
-    margin-left: 26vw;
-    width:72vw;
+    margin-left: 28vw;
+    width:70vw;
 }
 
 #idchar3{
@@ -162,8 +164,8 @@
     font-size: 4.5vw;
     column-count: 6;
     column-gap: 0;
-    margin-left: 26vw;
-    width:72vw;
+    margin-left: 28vw;
+    width:70vw;
 }
 
 .foundationExample{
@@ -210,6 +212,7 @@
     height: 100vh;
     /*width: 25vw*/
     z-index:-1;
+    width: 30vw;
 }
 
 #foundationVocabPlaceholder{
@@ -257,14 +260,17 @@
 
 #coutureMyInput {
     font-family: KaiTi;
-    width: 30vw;
+    width: 25vw;
     font-size: 2vw;
     color: lightgrey;
-    padding: 0.5vw;
-    padding-left: 0.8vw;
-    border: 0.15vw solid black;
-    border-radius: 1vw;
-    margin-left: 5vw;
+    padding: 0vw;
+    padding-bottom: : 0.5vw;
+    border: none;
+    border-bottom: 0.15vw solid white;
+    /*border-radius: 1vw;*/
+    margin-left: 6vw;
+    background-color: black;
+    margin-top: 10vw;
   }
 
 #inputAlert{
@@ -272,17 +278,23 @@
     font-size: 1.5vw;
     margin-left: 6vw;
     margin-top: 0.5vw;
+    color: white;
 }
 
-#colors{
+.colors{
     margin-left: 3vw;
-    margin-top: 2vw;
+    margin-top: 1vw;
+}
+
+#colors1{
+    margin-top: 3vw;
 }
 
 .colorText{
     font-family: KaiTi;
     font-size: 2vw;
-    margin-left: 2vw;
+    margin-left: 3vw;
+    color: white;
 }
 
 .colorSelector{
@@ -292,15 +304,52 @@
 
 #ca{
     position: absolute;
-    margin-top:-11vw;
+    margin-top:-16vw;
     margin-left:46vw;
 }
 
 .savePngText{
     font-family: KaiTi;
     font-size: 2vw;
-    margin-left: 5vw;
+    margin-left: 6vw;
     margin-top: 20vw;
+    color: white;
+}
+
+#coutureLeft{
+    background-color: black;
+    position: fixed;
+    width: 35vw;
+    height: 110vh;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+#themeExamples{
+    margin-top: 5vw;
+    /*margin-left: 3vw;*/
+}
+
+#draggable {
+    list-style-type: none;
+    margin-top: 2vw;
+    padding: 0;
+    font-family: KaiTi;
+    font-size: 4.5vw;
+    /*height: 4vw;*/
+    /*width: 70vw;*/
+    /*overflow: hidden;*/
+    white-space: nowrap;
+    
+}
+#draggableView{
+    overflow: hidden;
+    height: 6vw;
+    width: 65vw;
+    margin-left: 30vw;
+    margin-bottom: 2vw;
 }
 
 }
