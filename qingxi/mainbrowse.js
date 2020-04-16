@@ -1,14 +1,14 @@
-var url = "https://raw.githubusercontent.com/sssssuty/Thesis2/master/Testing1/testing4.json";
+var url = "https://raw.githubusercontent.com/sssssuty/Thesis2/master/Testing1/testing5.json";
     fetch(url)
             .then(function(response){return response.json();})
             .then(function(json){sortData1(json);})
 
-var url = "https://raw.githubusercontent.com/sssssuty/Thesis2/master/Testing1/testing4.json";
+var url = "https://raw.githubusercontent.com/sssssuty/Thesis2/master/Testing1/testing5.json";
     fetch(url)
             .then(function(response){return response.json();})
             .then(function(json){sortData2(json);})
 
-var url = "https://raw.githubusercontent.com/sssssuty/Thesis2/master/Testing1/testing4.json";
+var url = "https://raw.githubusercontent.com/sssssuty/Thesis2/master/Testing1/testing5.json";
     fetch(url)
             .then(function(response){return response.json();})
             .then(function(json){sortData3(json);})
