@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thesis Couture</title>
+    <meta charset="UTF-8">
+    <script src="jquery-3.3.1.js"></script>
+    <script src="topbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <script language="javascript" type="text/javascript" src="p5.js"></script> -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="couturep5.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div id="coutureLeft">
+        <input type="text" id="coutureMyInput" onkeyup="myFunction()" placeholder="Less than 5 characters :)" title="Type in a name">
+        <div class="colors" id="colors1">
+            <label class="colorText" for="favcolor1">Character</label>
+            <input class="colorSelector" type="color" id="favcolor1" name="favcolor1" value="#FF5C00">
+        </div>
+        <div class="colors">
+            <label class="colorText" for="favcolor2">Background</label>
+            <input class="colorSelector" type="color" id="favcolor2" name="favcolor2" value="#FFFFFF">
+        </div>
+
+        <div id="ca"></div>
+        <div class="savePngText" onclick="savePng()">Save As PNG</div>
+    </div>
+
+    <div id="blackontheleft3"></div>
+
+    <div id="topmenu">
+        <a id="topmenulogo" href="about.html" style="border:none; color:white; text-decoration-line:none;">清晰</a>
+        <a id="topmenufoundation" href="foundation.html" style="border:none; color:white; text-decoration-line:none;">Foundation</a>
+        <a id="topmenubrowse" href="index.html" style="border:none; color:white; text-decoration-line:none;">Browse</a>
+                <a id="topmenucouture"style="color:white;">Couture</a>
+    </div>
+
+</body>
+</html>

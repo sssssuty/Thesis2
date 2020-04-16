@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thesis Browse</title>
+    <meta charset="UTF-8">
+    <script src="jquery-3.3.1.js"></script>
+    <script src="mainbrowse.js"></script>
+    <script src="topbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="browseFilter">
+        <div id="browsebuttons" style="color:grey;">Sort by</div>
+        <div id="browseFilterLists">
+            <div class="browsebutton" id="buttonPinyin" onclick="sortPinyin()" id="button1" >Pinyin</div>
+            <div class="browsebutton" id="buttonComponent" onclick="sortComponent()" id="button3">Component</div>
+            <div class="browsebutton" id="buttonStroke" type="button" sortStrokeNum()" id="button2" >Stroke Number</div>
+        </div>
+    </div>
+
+    <div id="blackontheleft2"></div>
+
+    <div id = "idchar1"></div>
+    <div id = "idchar2"></div>
+    <div id = "idchar3"></div>
+
+    <div id="topmenu">
+        <a id="topmenulogo" href="about.html" style="border:none;text-decoration-line:none;color:white;">清晰</a>
+        <a id="topmenufoundation" href="foundation.html" style="border:none;text-decoration-line:none;color:white;">Foundation</a>
+        <a id="topmenubrowse" style="color:white;">Browse</a>
+        <a id="topmenucouture" href="couture.html" style="border:none;text-decoration-line:none;color:white;">Couture</a>
+    </div>
+
+
+
+
+</body>
+</html>

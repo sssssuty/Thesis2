@@ -1,0 +1,564 @@
+@font-face {
+  font-family: KaiTi;
+  src: url(HuaWenKaiTi-1.ttf);
+}
+
+
+/*mobile*/
+@media only screen and (max-device-width: 500px) {
+    #idchar1{
+    font-family: KaiTi;
+    font-size: 4.5vw;
+    column-count: 8;
+    column-gap: 0;
+    margin-left: 5vw;
+    width:90vw;
+}
+
+#idchar2{
+    font-family: KaiTi;
+    font-size: 4.5vw;
+    column-count: 8;
+    column-gap: 0;
+    margin-left: 5vw;
+    width:90vw;
+}
+
+#idchar3{
+    font-family: KaiTi;
+    font-size: 4.5vw;
+    column-count: 8;
+    column-gap: 0;
+    margin-left: 5vw;
+    width:90vw;
+}
+}
+
+/* desktop layout for larger windows*/
+@media only screen and (min-device-width: 500px){
+#topmenu{
+    height:6vw;
+    margin:0;
+    padding: 0;
+    border: 0;
+    font-family: KaiTi;
+    background-color: black;
+    margin-top:-1.5vh;
+    padding-top:1vh;
+    width: 100vw;
+    overflow: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+}
+
+#topmenulogo{
+    display: inline-block;
+    margin-right: 10vw;
+    font-size: 3vw;
+    padding-left: 5vw;
+
+    padding-top: 1vw;
+    /*margin-top: 1vw;*/
+}
+
+#topmenufoundation{
+    font-size: 1.5vw;
+    margin-right: 4.5vw;
+    margin-left: 48vw;
+    border-bottom: 0.15vw solid white;
+}
+#topmenubrowse{
+    font-size: 1.5vw;
+    margin-right: 4.5vw;
+    border-bottom: 0.15vw solid white;
+}
+#topmenutheme{
+    font-size: 1.5vw;
+    margin-right: 4.5vw;
+    border-bottom: 0.15vw solid white;
+}
+#topmenucouture{
+    font-size: 1.5vw;
+    border-bottom: 0.15vw solid white;
+}
+
+.browseFilter{
+    /*background-color: black;*/
+    position: fixed;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    height: 110vh;
+    top: 0;
+    left: 0;
+    /*width: 20vw;*/
+    width: 24.6vw;
+    /*width: 20vw;*/
+    /*overflow: hidden;*/
+    /*margin-top: 5vh;*/
+}
+
+#browseTopMenuLogo{
+    font-family: KaiTi;
+    color: white;
+    font-size: 3vw;
+    top: 2.7vw;
+    left: 5.7vw;
+}
+
+#browsebuttons{
+    margin-left: 6vw;
+    /*margin-bottom: 2vw;*/
+    font-family: KaiTi;
+    font-size: 1.5vw;
+    margin-top: 24vh;
+    /*font-style: italic;*/
+}
+
+.browsebutton{
+    /*background-color: black;*/
+    color: black;
+    border: none;
+    font-family: KaiTi;
+    font-size:2vw;
+    display: block;
+    margin-left: 6vw;
+    cursor: pointer;
+    width: 15vw;
+
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #FF5C00 50%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    transition: background-position 0.5s ease-out;
+}
+
+#browseFilterLists{
+    /*margin-top: -4.5vh;*/
+}
+
+#buttonPinyin{
+    background-color: #FF5C00;
+}
+
+#idchar1{
+    font-family: KaiTi;
+    font-size: 4.5vw;
+    column-count: 6;
+    column-gap: 0;
+    margin-top: 15vh;
+    margin-left: 27vw;
+    width:73vw;
+}
+
+#idchar2{
+    font-family: KaiTi;
+    font-size: 4.5vw;
+    column-count: 6;
+    column-gap: 0;
+    margin-top: 15vh;
+    margin-left: 27vw;
+    width:63vw;
+}
+
+#idchar3{
+    font-family: KaiTi;
+    font-size: 4.5vw;
+    column-count: 6;
+    column-gap: 0;
+    margin-top: 15vh;
+    margin-left: 27vw;
+    width:73vw;
+}
+
+.foundationcontent{
+    font-family: KaiTi;
+    position: absolute;
+    width: 60vw;
+    left: 33vw;
+    /*top: 30vh;*/
+    margin-top: 8.5vh;
+}
+
+#foundationcontentPlaceholder{
+    /*height: 10vh;*/
+    width: 1px;
+    top: 10vw;
+}
+
+#foundationExplaination{
+    font-size: 2vw;
+    position: absolute;
+    height: auto;
+    /*padding-top:10vh;*/
+}
+#foundationExampleHanZi{
+    font-family: KaiTi;
+    position: absolute;
+    font-size: 15vw;
+    /*margin-top: 52vw;*/
+}
+
+#foundationExamplePinYin{
+    font-family: KaiTi;
+    position: absolute;
+    font-size: 5.5vw;
+    /*margin-top: 53.5vw;*/
+    /*margin-left: 70vw;*/
+}
+
+#foundationExampleZhuYin{
+    font-family: KaiTi;
+    position: absolute;
+    font-size: 5.5vw;
+    /*margin-top: 62.5vw;*/
+    /*margin-left: 68vw;*/
+}
+
+#foundationcontentlesson101{
+    animation-name: come;
+    position: relative;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    height: auto;
+}
+
+#foundationcontentpinyin{
+    position: relative;
+    animation-duration: 3s;
+    display: none;
+    animation-fill-mode: forwards;
+}
+#foundationcontentzhuyin{
+    position: relative;
+    animation-duration: 3s;
+    display: none;
+    animation-fill-mode: forwards;
+}
+#foundationcontentstroke{
+    position: relative;
+    animation-duration: 3s;
+    display: none;
+    animation-fill-mode: forwards;
+}
+#foundationcontentradical{
+    position: relative;
+    animation-duration: 3s;
+    display: none;
+    animation-fill-mode: forwards;
+}
+#foundationcontentstructure{
+    position: relative;
+    animation-duration: 3s;
+    display: none;
+    animation-fill-mode: forwards;
+}
+#foundationcontentsequence{
+    position: relative;
+    animation-duration: 3s;
+    display: none;
+    animation-fill-mode: forwards;
+}
+#foundationcontentpictophonectic{
+    position: relative;
+    animation-duration: 3s;
+    display: none;
+    animation-fill-mode: forwards;
+}
+#foundationcontentideogram{
+    position: relative;
+    animation-duration: 3s;
+    display: none;
+    animation-fill-mode: forwards;
+}
+#foundationcontentcombined{
+    position: relative;
+    animation-duration: 3s;
+    display: none;
+    animation-fill-mode: forwards;
+}
+#foundationcontentpictogram{
+    position: relative;
+    animation-duration: 3s;
+    display: none;
+    animation-fill-mode: forwards;
+}
+#foundationcontenttransformed{
+    position: relative;
+    animation-duration: 3s;
+    display: none;
+    animation-fill-mode: forwards;
+}
+#foundationcontentrebus{
+    position: relative;
+    animation-duration: 3s;
+    display: none;
+    animation-fill-mode: forwards;
+}
+@keyframes come {
+    0%   {top: 13vw;opacity: 0;}
+    25%  {top: 3vw;opacity: 1;}
+    100%  {top: 3vw;opacity: 1;}
+}
+
+@keyframes go {
+    0%   {top: 3vw;opacity: 1;}
+    10%  {opacity: 0;}
+    25%  {top: 13vw;opacity: 0;}
+    100%  {top: 13vw;opacity: 0;}
+}
+
+.foundationExample{
+    position: fixed;
+}
+
+#foundationVocab{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    left: -1vw;
+    top: 11vh;
+    margin-bottom: 10vh;
+    height: 78vh;
+    overflow: scroll;
+    /*direction: rtl;*/
+    /*float:left;*/
+}
+
+#foundationVocab.scroll {
+
+  /*padding-right: 0;*/
+  /*background: lightgrey; */
+}
+
+.testscroll1{
+    /*direction: ltr;*/
+}
+
+.testscroll2{
+/*    direction: rtl;
+    unicode-bidi: bidi-override;
+    overflow: scroll;*/
+}
+
+/*::-webkit-scrollbar {
+  width: 0.6vw;
+  height: 0.6vw;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: lightgrey; 
+  border-radius: 5vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5C00; 
+}*/
+
+#foundationVocabList1{
+    /*background-position: 0;*/
+    background-position: -99.99% 0;
+}
+
+#foundationVocabPlaceholder{
+    height: 11.3vw;
+    width: 1vw;
+    /*margin-top: 5vw;*/
+}
+#foundationVocabPlaceholder2{
+    height: 9.8vw;
+    width: 1vw;
+}
+
+.foundationVocabList{
+    font-family: KaiTi;
+    cursor: pointer;
+    font-size: 2vw;
+    color: black;
+    margin-left: 5vw;
+    margin-right: 2vw;
+    padding-left:1vw;
+    padding-right:1vw; 
+    width: auto;
+    /*width: 30vw;*/
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #FF5C00 50%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    transition: background-position 0.5s ease-out;
+}
+.foundationVocabList:hover{
+    /*background-position: -99.99% 0;*/
+    /*background-color: #FF5C00;*/
+}
+/*.foundationVocabList:active{
+    background-color: #FF5C00;
+}*/
+
+#foundationVocabType{
+    font-family: KaiTi;
+    font-size: 1.5vw;
+    color: grey;
+    margin-left: 6vw;
+}
+
+#foundationTopMenuLogo{
+    font-family: KaiTi;
+    color: white;
+    margin-left: 5vw;
+    font-size: 3vw;
+    margin-top: -8vw;
+}
+
+
+.aboutText{
+    font-family: KaiTi;
+    font-size: 2vw;
+    margin-left: 5vw;
+    padding-top: 20vh;
+    width: 70vw;
+}
+
+#coutureMyInput {
+    font-family: KaiTi;
+    width: 20vw;
+    font-size: 2vw;
+    color: grey;
+    padding: 0vw;
+    padding-bottom: : 0.5vw;
+    border: none;
+    border-bottom: 0.15vw solid black;
+    /*border-radius: 1vw;*/
+    margin-left: 6vw;
+    background-color: white;
+    margin-top: 10vw;
+  }
+
+#inputAlert{
+    font-family: KaiTi;
+    font-size: 1.5vw;
+    margin-left: 6vw;
+    margin-top: 0.5vw;
+    color: black;
+}
+
+.colors{
+    margin-left: 3vw;
+    margin-top: 1vw;
+}
+
+#colors1{
+    margin-top: 3vw;
+}
+
+.colorText{
+    font-family: KaiTi;
+    font-size: 2vw;
+    margin-left: 3vw;
+    color: black;
+}
+
+.colorSelector{
+    border-radius: 1vw;
+    width:4.8vw;
+}
+
+#ca{
+    position: absolute;
+    margin-top:-16vw;
+    margin-left:46vw;
+}
+
+.savePngText{
+    font-family: KaiTi;
+    font-size: 2vw;
+    margin-left: 6vw;
+    margin-top: 20vw;
+    color: black;
+}
+
+#coutureLeft{
+    /*background-color: black;*/
+    position: fixed;
+    width: 35vw;
+    height: 110vh;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+/*#themeExamples{
+    margin-top: 5vw;
+    margin-left: 30vw;
+}
+*/
+/*#foundationVocab2{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    margin-left: -1vw;
+    margin-top: -46vh;
+    z-index:100;
+    width: 30vw;
+}*/
+
+/*#draggable {
+    list-style-type: none;
+    margin-top: 2vw;
+    padding: 0;
+    font-family: KaiTi;
+    font-size: 4.5vw;
+    white-space: nowrap;  
+}
+
+#draggableView{
+    overflow: hidden;
+    height: 6vw;
+    width: 65vw;
+    margin-bottom: 2vw;
+}*/
+
+#blackontheleft{
+    position: fixed;
+    z-index: -100;
+    background-color: white;
+    /*width: 28vw;*/
+    height: 40vh;
+    margin-left: 26vw;
+    margin-top: 20vh;
+    border-left: 0.1vw solid lightgrey;
+    z-index: 100;
+}
+
+#blackontheleft2{
+    position: fixed;
+    z-index: -100;
+    background-color: white;
+    /*width: 28vw;*/
+    height: 40vh;
+    margin-left: 22vw;
+    margin-top: 13.5vh;
+    border-left: 0.1vw solid lightgrey;
+    z-index: 100;
+}
+
+#blackontheleft3{
+    position: fixed;
+    z-index: -100;
+    background-color: white;
+    /*width: 28vw;*/
+    height: 40vh;
+    margin-left: 28vw;
+    margin-top: 27.5vh;
+    border-left: 0.1vw solid lightgrey;
+    z-index: 100;
+}
+
+
+
+}

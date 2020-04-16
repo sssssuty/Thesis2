@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foundations</title>
+    <meta charset="UTF-8">
+    <script src="jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="mainfoundation.js"></script>
+    <script src="topbar.js"></script>
+    <script src="scrollbar.js"></script>
+    <script src="listhover.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="topmenu">
+        <a id="topmenulogo" href="about.html" style="border:none; color:white; text-decoration-line:none;">清晰</a>
+        <a id="topmenufoundation" style="color:white;">Foundation</a>
+        <a id="topmenubrowse" href="index.html" style="border:none; color:white; text-decoration-line:none;">Browse</a>
+        <a id="topmenucouture" href="couture.html" style="border:none; color:white; text-decoration-line:none;">Couture</a>
+    </div>
+
+    <div class="foundationExample" id="foundationVocab">
+            <!-- <div id="foundationVocabPlaceholder"></div> -->
+            <div id="foundationVocabType"><br>Brief</div>
+            <div class="foundationVocabList" id="foundationVocabList1" onclick="listFunction1()">Lesson 101</div>
+            <div id="foundationVocabType"><br>Pronunciation</div>
+            <div class="foundationVocabList" id="foundationVocabList2" onclick="listFunction2()">PinYin</div>
+            <div class="foundationVocabList" id="foundationVocabList3" onclick="listFunction3()">ZhuYin</div>
+            <div id="foundationVocabType"><br>Character</div>
+            <div class="foundationVocabList" id="foundationVocabList4" onclick="listFunction4()">Stroke</div>
+            <div class="foundationVocabList" id="foundationVocabList5" onclick="listFunction5()">Radicals</div>
+            <div class="foundationVocabList" id="foundationVocabList6" onclick="listFunction6()">Structure</div>
+            <div class="foundationVocabList" id="foundationVocabList7" onclick="listFunction7()">Sequence</div>
+            <div id="foundationVocabType"><br>Punctuation</div>
+            <div class="foundationVocabList" id="foundationVocabList4" onclick="listFunction14()">Punctuation Marks</div>
+            <div id="foundationVocabType"><br>Classifications</div>
+            <div class="foundationVocabList" id="foundationVocabList8" onclick="listFunction8()">Pictophonetic</div>
+            <div class="foundationVocabList" id="foundationVocabList9" onclick="listFunction9()">Ideogram</div>
+            <div class="foundationVocabList" id="foundationVocabList10" onclick="listFunction10()">Combined Ideogram</div>
+            <div class="foundationVocabList" id="foundationVocabList11" onclick="listFunction11()">Pictogram</div>
+            <div class="foundationVocabList" id="foundationVocabList12" onclick="listFunction12()">Transformed Cognates</div>
+            <div class="foundationVocabList" id="foundationVocabList13" onclick="listFunction13()">Rebus</div>
+        </div>
+
+        <div id="blackontheleft"></div>
+
+<!-- Lesson 101 -->
+    <div class="foundationcontent" id="foundationcontentlesson101">
+        <!-- <div id="foundationcontentPlaceholder"></div> -->
+        <a id="foundationExplaination">
+            The proposal of a simplified traditional Chinese written language system was initiated by the National Party in 1935 to popularize fundamental education. The Communist Party soon adapted it, further developed it, and decide to use it as the official written language for the newborn People' Republic of China in 1949. 
+            <br><br>The Chinese government issued the first official Chinese Character Simplification Scheme in 1956, and in the following decades, with multiple rounds of revision, the GB2312 was published in 1980 May globally. GB2312 includes 6763 Simplified Chinese Characters and 682 non-Chinese characters and symbols.
+            <br><br>Since the proposal was initiated to help foundamental education, all simplified characters are included in Xin Hua dictionary and published into testing since 1953. To 2016, the 11th version of Xin Hua dictionary debuted.
+        </a>
+    </div>
+
+<!-- Pinyin -->
+    <div class="foundationcontent" id="foundationcontentpinyin">
+        <!-- <div id="foundationcontentPlaceholder"></div> -->
+        <a id="foundationExplaination">
+            Pinyin is the Chinese version of the Internation Phonetic Alphabet which was build to help with pronunciation. The phrase "Pin Yin" literally translates into "spell sound."<br><br>
+            There are 23 consonants 声母:<br>
+            <strong>b, m, f, d, t, n, l, g, k, h, j, q, x, zh, ch, sh, r, z, c, s, y, w.</strong><br><br>
+            There are 24 vowels 韵母 including:<br>
+            6 single vowels <strong>a, o, e, i, u, ü;</strong><br>
+            8 complex vowels <strong>ai, ei, ui, ao, ou, iu, ie, üe;</strong><br>
+            9 nasal vowels <strong>an, en, in, un, ün, ang, eng, ing, ong;</strong><br>
+            and 1 vowel that needs to curl the tongue 卷舌音 <strong>er;</strong><br><br>
+            There are also 4 accents highlighted as a "hat" on the single vowels:
+            <!-- 阴平：－   阳平：／   上声：∨   去声：﹨ 轻音：不标记 -->
+            yin ping：－<br>yang ping：／<br>shang sheng：∨<br>qu sheng：﹨<br>qing yin：none<br><br>
+            ā á ǎ à a<br>
+            ō ó ǒ ò o<br>
+            ē é ě è e<br>
+            ī í ǐ ì i<br>
+            ū ú ǔ ù u<br>
+            ǖ ǘ ǚ ǜ ü<br>
+        </a>
+    </div>
+<!-- Zhuyin -->
+    <div class="foundationcontent" id="foundationcontentzhuyin">
+            <a id="foundationExplaination">With character styled graphics, zhuyin functions exactly the same with pinyin. Differently, the accents stay seperate from vowels.</a>
+        <div  id="foundationExampleZhuYin" style="color:#FF5C00;">ㄧˊ ㄓ</div>
+    </div>
+<!-- Stroke -->
+    <div class="foundationcontent" id="foundationcontentstroke">
+        <a id="foundationExplaination">
+            Stroke is the foundamental elements of all characters. In total, there are 32 types of strokes, contributing to all the composition of 6000+ Simplified Chinese Characters.<br><br>
+            6 foundamental strokes:<br>
+            点 丶 横 一 竖 丨 撇 丿 捺 ㇏ 提 ㇀ <br><br>
+            26 complex strokes:<br>
+            横折 𠃍 横撇 フ 横钩 乛 横折钩 𠃌 横折提 ㇊ 横折弯 ㇍ <br>
+            横折折 ㇅ 横斜钩 ⺄ 横折弯钩 ㇈ 横撇弯钩 ㇌ 横折折撇 ㇋ <br>
+            横折折折钩 𠄎 横折折折 ㇎ 竖提 𠄌 竖折 𠃊 竖钩 亅 竖弯 ㇄ <br>
+            竖弯钩 乚 竖折撇 ㄣ 竖折折 𠃑 竖折折钩 ㇉ 撇点 𡿨 撇折 𠃋 <br>
+            斜钩 ㇂ 弯钩 ㇁ 卧钩 ㇃<br>
+            而在印刷宋体中，卧钩 ㇃ 一律作竖弯钩 乚 
+        </a>
+    </div>
+<!-- Radicals -->
+    <div class="foundationcontent" id="foundationcontentradical">
+        <a id="foundationExplaination">Combined from 1 to 17 strokes, radicals are the vital part of characters because they are hint for meaning or pronunciations.<br><br>
+            <!-- 笔画数为一的部首  -->
+            One stroke radicals：<br>
+            丨 亅 丿 乛 一 乙 乚 丶<br><br>
+
+            <!-- 笔画数为二的部首  -->
+            Two strokes radicals：<br>
+            八 勹 匕 冫 卜 厂 刀 刂 儿 二 匚 阝 丷 几 卩 冂 力 冖 凵 人 亻 入 十 厶 亠 匸 讠 廴 又<br><br>
+
+            <!-- 笔画数为三的部首  -->
+            Three strokes radicals：<br>
+            艹 屮 彳 巛 川 辶 寸 大 飞 干 工 弓 廾 广 己 彐 彑 巾 口 马 门 宀 女 犭 山 彡 尸 饣 士 扌 氵 纟 巳 土 囗 兀 夕 小 忄 幺 弋 尢 夂 子<br><br>
+
+            <!-- 笔画数为四的部首  -->
+            Four strokes radicals：<br>
+            贝 比 灬 长 车 歹 斗 厄 方 风 父 戈 卝 户 火 旡 见 斤 耂 毛 木 肀 牛 牜 爿 片 攴 攵 气 欠 犬 日 氏 礻 手 殳 水 瓦 尣 王 韦 文 毋 心 牙 爻 曰 月 爫 支 止 爪<br><br>
+
+            <!-- 笔画数为五的部首  -->
+            Five strokes radicals：<br>
+            白 癶 歺 甘 瓜 禾 钅 立 龙 矛 皿 母 目 疒 鸟 皮 生 石 矢 示 罒 田 玄 穴 疋 业 衤 用 玉<br><br>
+
+            <!-- 笔画数为六的部首  -->
+            Six strokes radicals：<br>
+            耒 艸 臣 虫 而 耳 缶 艮 虍 臼 米 齐 肉 色 舌 覀 页 先 行 血 羊 聿 至 舟 衣 竹 自 羽 糸 糹<br><br>
+
+            <!-- 笔画数为七的部首  -->
+            Seven strokes radicals：<br>
+            貝 采 镸 車 辰 赤 辵 豆 谷 見 角 克 里 卤 麦 身 豕 辛 言 邑 酉 豸 走 足<br><br>
+
+            <!-- 笔画数为八的部首  -->
+            Eight strokes radicals：<br>
+            青 靑 雨 齿 長 非 阜 金 釒 隶 門 靣 飠 鱼 隹<br><br>
+
+            <!-- 笔画数为九的部首  -->
+            Nine strokes radicals：<br>
+            風 革 骨 鬼 韭 面 首 韋 香 頁 音<br><br>
+
+            <!-- 笔画数为十的部首  -->
+            Ten strokes radicals：<br>
+            髟 鬯 鬥 高 鬲 馬<br><br>
+
+            <!-- 笔画数为十一的部首  -->
+            Eleven strokes radicals：<br>
+            黄 鹵 鹿 麻 麥 鳥 魚<br><br>
+
+            <!-- 笔画数为十二的部首  -->
+            Twelve strokes radicals：<br>
+            鼎 黑 黽 黍 黹<br><br>
+
+            <!-- 笔画数为十三的部首  -->
+            Thirteen strokes radicals：<br>
+            鼓 鼠<br><br>
+
+            <!-- 笔画数为十四的部首  -->
+            Fourteen strokes radicals：<br>
+            鼻 齊<br><br>
+
+            <!-- 笔画数为十五的部首  -->
+            Fifteen strokes radicals：<br>
+            齒 龍 龠<br><br>
+        </a>
+    </div>
+<!-- Structure -->
+    <div class="foundationcontent" id="foundationcontentstructure">
+        <a id="foundationExplaination">Interesting</a>
+        <div  id="foundationExampleHanZi">清晰</div>
+        <div  id="foundationExamplePinYin">yí zhī</div>
+        <div  id="foundationExampleZhuYin">ㄧˊ ㄓ</div>
+    </div>
+<!-- Sequence -->
+    <div class="foundationcontent" id="foundationcontentsequence">
+        <a id="foundationExplaination">Interesting</a>
+        <div  id="foundationExampleHanZi">清晰</div>
+        <div  id="foundationExamplePinYin">yí zhī</div>
+        <div  id="foundationExampleZhuYin">ㄧˊ ㄓ</div>
+    </div>
+<!-- Pictophonectic -->
+    <div class="foundationcontent" id="foundationcontentpictophonectic">
+        <a id="foundationExplaination">Interesting</a>
+        <div  id="foundationExampleHanZi">清晰</div>
+        <div  id="foundationExamplePinYin">yí zhī</div>
+        <div  id="foundationExampleZhuYin">ㄧˊ ㄓ</div>
+    </div>
+<!-- Ideogram -->
+    <div class="foundationcontent" id="foundationcontentideogram">
+        <a id="foundationExplaination">Interesting</a>
+        <div  id="foundationExampleHanZi">清晰</div>
+        <div  id="foundationExamplePinYin">yí zhī</div>
+        <div  id="foundationExampleZhuYin">ㄧˊ ㄓ</div>
+    </div>
+<!-- Combined Ideogram -->
+    <div class="foundationcontent" id="foundationcontentcombined">
+        <a id="foundationExplaination">Interesting</a>
+        <div  id="foundationExampleHanZi">清晰</div>
+        <div  id="foundationExamplePinYin">yí zhī</div>
+        <div  id="foundationExampleZhuYin">ㄧˊ ㄓ</div>
+    </div>
+<!-- Pictogram -->
+    <div class="foundationcontent" id="foundationcontentpictogram">
+        <a id="foundationExplaination">Interesting</a>
+        <div  id="foundationExampleHanZi">清晰</div>
+        <div  id="foundationExamplePinYin">yí zhī</div>
+        <div  id="foundationExampleZhuYin">ㄧˊ ㄓ</div>
+    </div>
+<!-- Transformed Cognates -->
+    <div class="foundationcontent" id="foundationcontenttransformed">
+        <a id="foundationExplaination">Interesting</a>
+        <div  id="foundationExampleHanZi">清晰</div>
+        <div  id="foundationExamplePinYin">yí zhī</div>
+        <div  id="foundationExampleZhuYin">ㄧˊ ㄓ</div>
+    </div>
+<!-- Rebus -->
+    <div class="foundationcontent" id="foundationcontentrebus">
+        <a id="foundationExplaination">Interesting</a>
+        <div  id="foundationExampleHanZi">清晰</div>
+        <div  id="foundationExamplePinYin">yí zhī</div>
+        <div  id="foundationExampleZhuYin">ㄧˊ ㄓ</div>
+    </div>
+
+<!-- <div class="testscroll1"> -->
+    <!-- <div class="testscroll2"> -->
+        
+    <!-- </div> -->
+<!-- </div> -->
+
+<!--     <a id="foundationTopMenuLogo" href="about.html" style="position:absolute;color:white; text-decoration-line:none;">清晰</a> -->
+
+    
+    
+
+<!--     <svg height="210" width="500">
+        <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+    </svg> -->
+
+
+</body>
+</html>

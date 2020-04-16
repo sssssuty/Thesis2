@@ -1,14 +1,14 @@
-var url = "https://raw.githubusercontent.com/sssssuty/Thesis2/master/Testing1/testing1.json";
+var url = "https://raw.githubusercontent.com/sssssuty/Thesis2/master/testing1/testing2.json";
     fetch(url)
             .then(function(response){return response.json();})
             .then(function(json){sortData1(json);})
 
-var url = "https://raw.githubusercontent.com/sssssuty/Thesis2/master/Testing1/testing1.json";
+var url = "https://raw.githubusercontent.com/sssssuty/Thesis2/master/testing1/testing2.json";
     fetch(url)
             .then(function(response){return response.json();})
             .then(function(json){sortData2(json);})
 
-var url = "https://raw.githubusercontent.com/sssssuty/Thesis2/master/Testing1/testing1.json";
+var url = "https://raw.githubusercontent.com/sssssuty/Thesis2/master/testing1/testing2.json";
     fetch(url)
             .then(function(response){return response.json();})
             .then(function(json){sortData3(json);})
@@ -29,9 +29,10 @@ function sortData1(json){
         char.innerHTML = nn;
         var className = "strokeNum" + strokeNum;
         document.getElementById("idchar1").appendChild(char).setAttribute("class", className);
-        $("#buttonPinyin").css({"color": "#FF5C00"});
-        $("#buttonComponent").css({"color": "white"});
-        $("#buttonStroke").css({"color": "white"});
+        $("#buttonPinyin").css({"color": "black"});
+        $("#buttonPinyin").css({"backgroundColor": ""});
+        $("#buttonComponent").css({"color": "black"});
+        $("#buttonStroke").css({"color": "black"});
     }
 
 }
@@ -68,44 +69,38 @@ function sortData3(json){
             char.innerHTML = nn;
             var className = "pinyin" + pinYin;      
             document.getElementById("idchar3").appendChild(char).setAttribute("class", className);
-            document.getElementById("idchar3").style.display = "none";
-            
+            document.getElementById("idchar3").style.display = "none";    
         }
 }
 
 function sortPinyin(){
-    // console.log("hahah");
-    // document.getElementById("idchar1").style.backgroundColor = "yellow";
-    // document.getElementById("idchar2").style.backgroundColor = "red";
     document.getElementById("idchar1").style.display = "block";
     document.getElementById("idchar2").style.display = "none";
     document.getElementById("idchar3").style.display = "none";
-    $("#buttonPinyin").css({"color": "#FF5C00"});
-    $("#buttonComponent").css({"color": "white"});
-    $("#buttonStroke").css({"color": "white"});
+
+    document.getElementById("buttonPinyin").style.backgroundPosition = "-99.99% 0";
+    document.getElementById("buttonComponent").style.backgroundPosition = "0";
+    document.getElementById("buttonStroke").style.backgroundPosition = "0";
+
 }
 function sortStrokeNum(){
-    // console.log("blablabla");
-    // document.getElementById("idchar1").style.backgroundColor = "red";
-    // document.getElementById("idchar2").style.backgroundColor = "yellow";
     document.getElementById("idchar1").style.display = "none";
     document.getElementById("idchar2").style.display = "block";
     document.getElementById("idchar3").style.display = "none";
-    $("#buttonPinyin").css({"color": "white"});
-    $("#buttonStroke").css({"color": "#FF5C00"});
-    $("#buttonComponent").css({"color": "white"});
+
+    document.getElementById("buttonPinyin").style.backgroundPosition = "0";
+    document.getElementById("buttonComponent").style.backgroundPosition = "0";
+    document.getElementById("buttonStroke").style.backgroundPosition = "-99.99% 0";
 }
 
 function sortComponent(){
-    // console.log("blablabla");
-    // document.getElementById("idchar1").style.backgroundColor = "red";
-    // document.getElementById("idchar2").style.backgroundColor = "yellow";
     document.getElementById("idchar1").style.display = "none";
     document.getElementById("idchar2").style.display = "none";
     document.getElementById("idchar3").style.display = "block";
-    $("#buttonPinyin").css({"color": "white"});
-    $("#buttonStroke").css({"color": "white"});
-    $("#buttonComponent").css({"color": "#FF5C00"});
+
+    document.getElementById("buttonPinyin").style.backgroundPosition = "0";
+    document.getElementById("buttonComponent").style.backgroundPosition = "-99.99% 0";
+    document.getElementById("buttonStroke").style.backgroundPosition = "0";
 }
 
 
